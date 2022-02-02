@@ -15,12 +15,10 @@ pipeline{
         }
         stage("run multiple command"){
             steps{
-                sh ''
+                sh ''pwd
                 ls
-                date 
-                cat
-                mkdir hiren
-                '''
+                date
+                cat'''
             }
             
         }
