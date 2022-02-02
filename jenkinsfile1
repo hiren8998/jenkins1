@@ -1,27 +1,33 @@
 pipeline{
-    agent any
+    agent{
+        label "node"
+    }
     stages{
-        stage("A"){
+        stage("a"){
             steps{
                 echo "========executing A========"
             }
+            
         }
-        stages{
         stage("b"){
             steps{
                 echo "========executing A========"
             }
             
         }
-        stages{
         stage("c"){
             steps{
                 echo "========executing A========"
             }
             
         }
-        stages{
         stage("d"){
+            steps{
+                echo "========executing A========"
+            }
+            
+        }
+        stage("e"){
             steps{
                 echo "========executing A========"
             }
